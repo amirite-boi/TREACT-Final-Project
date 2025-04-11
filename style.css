@@ -27,10 +27,153 @@ html {
     color: #6415ff;
 }
 
+h1 {
+    font-size: 48px;
+    color: #1a202c;
+}
+
+h2 {
+    font-size: 48px;
+    color: #243e63;
+}
+
+h4 {
+    font-style: 'uppercase';
+    font-size: 16px;
+    color: #6415ff;
+}
+
+p {
+    font-size: 16px;
+    color: #7c8ba1;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    width: 100%;
+}
+
+button {
+    cursor: not-allowed;
+}
+
+.btn {
+    width: 160px;
+    height: 50px;
+    border-radius: 500px;
+    border: none;
+    background-color: #6415ff;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 8px;
+    z-index: 2;
+    transition: all 300ms ease;
+}
+
+
 /*
 
 SECTIONS
 
 */
 
+/*NAVIGATION*/
 
+nav {
+    height: 80px;
+    display: flex;
+}
+
+.nav__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__link {
+    margin: 0 24px;
+    padding: 4px 0 0;
+    font-weight: bold;
+    font-size: 14px;
+    color: #243e63;
+    text-decoration: none;
+}
+
+.nav__link--login {
+    margin: 0 24px 0 48px;
+}
+
+.nav__link--primary {
+    margin: 0;
+    width: auto;
+    padding: 10px 32px;
+    background-color: #6415ff;
+    border-radius: 500px;
+    color: white;
+    transition: all 300ms ease;
+}
+
+.nav__link:hover {
+    color: #6415ff;
+    text-decoration: underline;
+    transition: all 300ms ease;
+}
+
+.nav__link--primary:hover {
+    background-color: #321963;
+    color: #efe8ff;
+}
+
+.nav__logo {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    font-size: 24px;
+}
+
+.nav__logo--title {
+    margin: 0 0 0 12px;
+    padding-bottom: 2px;
+    font-size: 24px;
+    color: #243e63;
+}
+
+.nav__logo--img {
+    height: 50px;
+}
+
+.nav__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*HEADER*/
+
+.header__column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__column--customer-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #a0aec0;
+    margin-top: 80px;
+    letter-spacing: 0.6;
+}
