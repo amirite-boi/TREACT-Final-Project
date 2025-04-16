@@ -356,16 +356,19 @@
     <section id="pricing">
       <div class="container">
         <div class="row">
-          <h4 class="section__tag">PRICING</h4>
-          <h2 class="section__title">
-            Reasonable & Flexible <span class="purple">Plans.</span>
-          </h2>
-          <p class="section__para">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-            distinctio ipsam placeat iste cumque facilis quos.
-          </p>
+          <div class="pricing__description">
+            <h4 class="section__tag">PRICING</h4>
+            <h2 class="section__title">
+              Reasonable & Flexible <span class="purple">Plans.</span>
+            </h2>
+            <p class="section__para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+              distinctio ipsam placeat iste cumque facilis quos.
+            </p>
+          </div>
           <div class="plan__wrapper">
             <div class="plan">
+              <div class="plan__bar"></div>
               <div class="plan__top">
                 <h4 class="plan__name">PERSONAL</h4>
                 <h2 class="plan__price">$17.99</h2>
@@ -396,10 +399,11 @@
                 <p class="plan__feature">30 Templates</p>
               </div>
               <div class="plan__bottom">
-                <button class="btn btn__plan--one">BUY NOW</button>
+                <button class="btn btn__plan--two">BUY NOW</button>
               </div>
             </div>
             <div class="plan">
+              <div class="plan__bar"></div>
               <div class="plan__top">
                 <h4 class="plan__name">PERSONAL</h4>
                 <h2 class="plan__price">$17.99</h2>
@@ -413,7 +417,7 @@
                 <p class="plan__feature">30 Templates</p>
               </div>
               <div class="plan__bottom">
-                <button class="btn btn__plan--one">BUY NOW</button>
+                <button class="btn btn__plan--three">BUY NOW</button>
               </div>
             </div>
           </div>
@@ -468,20 +472,23 @@
                 veniam possimus?
               </p>
               <div class="review__client">
-                <img
+                <div class="review__user">
+                  <img
                   src="./assets/photo-1494790108377-be9c29b29330.avif"
                   alt=""
                   class="review__client--img"
-                />
-                <div class="review__client--profile">
-                  <h3 class="review__client--profile-name">Charlotte Hale</h3>
-                  <h4 class="review__client--profile-role">
-                    Director, Delos Inc.
-                  </h4>
+                  />
+                  <div class="review__client--profile">
+                    <h3 class="review__client--profile-name">Charlotte Hale</h3>
+                    <h4 class="review__client--profile-role">
+                      Director, Delos Inc.
+                    </h4>
+                  </div>
                 </div>
                 <div class="review__buttons">
-                  <button class="review_btn">ADD ICON</button>
-                  <button class="review_btn">ADD ICON</button>
+                  <button class="review__btn">ADD ICON</button>
+                  <div class="divider"></div>
+                  <button class="review__btn">ADD ICON</button>
                 </div>
               </div>
             </div>
@@ -493,12 +500,14 @@
       <div class="container">
         <div class="row">
           <div class="CTA__box">
-            <h2 class="CTA__title">
-              Developers all over the world are happily using Treact
-            </h2>
-            <div class="CTA__buttons">
-              <button class="btn CTA__btn--one">Get Started</button>
-              <button class="btn CTA__btn--two">Contact Us</button>
+            <div class="CTA__row">
+              <h2 class="CTA__title">
+                Developers all over the world are happily using Treact
+              </h2>
+              <div class="CTA__buttons">
+                <button class="btn CTA__btn--one">Get Started</button>
+                <button class="btn CTA__btn--two">Contact Us</button>
+              </div>
             </div>
           </div>
         </div>
@@ -554,11 +563,13 @@
           />
           <h1 class="footer__logo--title">Treact Inc.</h1>
         </div>
-        <div class="footer__copyright">&copy; 2025 Treact INc. All Rights Reserved</div>
+        <div class="footer__copyright">
+          &copy; 2025 Treact INc. All Rights Reserved
+        </div>
         <div class="footer__social-icons">
-            <a href="" class="social--link">ICON</a>
-            <a href="" class="social--link">ICON</a>
-            <a href="" class="social--link">ICON</a>
+          <a href="" class="social--link">ICON</a>
+          <a href="" class="social--link">ICON</a>
+          <a href="" class="social--link">ICON</a>
         </div>
       </div>
     </div>
