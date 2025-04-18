@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Amiri's TReact Project</title>
+    <title>Amiri's Treact Project</title>
     <link rel="stylesheet" href="./style.css" />
     <script
       src="https://kit.fontawesome.com/ff4c1d9e56.js"
@@ -36,6 +36,34 @@
                 <a href="#" class="nav__link nav__link--primary">Sign Up</a>
               </li>
             </ul>
+            <button class="btn__menu" onclick="openMenu()">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="menu__backdrop">
+              <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                <i class="fa-solid fa-times"></i>
+              </button>
+              <ul class="menu__links">
+                <li class="menu__list">
+                  <a href="#" class="menu__link" onclick="closeMenu()">About</a>
+                </li>
+                <li class="menu__list">
+                  <a href="#" class="menu__link" onclick="closeMenu()">Blog</a>
+                </li>
+                <li class="menu__list">
+                  <a href="#" class="menu__link" onclick="closeMenu()">Pricing</a>
+                </li>
+                <li class="menu__list">
+                  <a href="#" class="menu__link" onclick="closeMenu()">Contact Us</a>
+                </li>
+                <li class="menu__list">
+                  <a href="#" class="menu__link" onclick="closeMenu()">Login</a>
+                </li>
+                <li class="menu__list">
+                  <a href="#" class="menu__link menu__link--primary" onclick="closeMenu()">Sign Up</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
@@ -574,7 +602,7 @@
           <h1 class="footer__logo--title">Treact Inc.</h1>
         </div>
         <div class="footer__copyright">
-          &copy; 2025 Treact INc. All Rights Reserved
+          &copy; 2025 Treact Inc. All Rights Reserved
         </div>
         <div class="footer__social-icons">
           <a href="" class="social--link"
