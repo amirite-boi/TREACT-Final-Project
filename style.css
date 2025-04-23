@@ -215,13 +215,17 @@ nav {
 }
 
 .menu__backdrop {
-  position: absolute;
+  position: fixed;
   background-color: #321963;
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  z-index: 3;
+  height: 378px;
+  margin: 24px 16px;
+  padding: 32px;
+  border: 1px solid rgb(229, 231, 235);
+  border-radius: 8px;
+  z-index: 4;
   justify-content: center;
   align-items: center;
   opacity: 0;
@@ -234,33 +238,38 @@ nav {
   opacity: 1;
 }
 
-.menu--open {
-  max-height: 100vh;
-  max-width: 100vw;
-  overflow-y: hidden;
-}
-
 .btn__menu--close {
   position: absolute;
   right: 20px;
   top: 10px;
   padding: 8px;
   color: #e5e7eb;
+  scale: 0.6;
 }
 
 .menu__links {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
 }
 
 .menu__list {
-  padding: 32px 0;
+  margin: 8px;
+  padding-bottom: 6px;
 }
 
 .menu__link {
   color: #e5e7eb;
-  font-size: 40px;
+  font-size: 18px;
+}
+
+.menu__link--primary {
+  padding: 12px 32px;
+  margin: 8px 0;
+  font-size: 18px;
 }
 
 .menu__link--primary:hover {
@@ -646,8 +655,6 @@ nav {
 
 .plan {
   width: calc(100% / 3.3);
-  display: flex;
-  flex-direction: column;
   margin-top: 64px;
   padding-top: 8px;
   border-radius: 8px;
@@ -655,16 +662,34 @@ nav {
     rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
   z-index: 1;
   background: white;
+  position: relative;
 }
 
-/*.plan__bar {
+.plan__stripe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 8px;
-  background-color: black;
-}*/
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.plan:nth-child(1) .plan__stripe {
+  background: linear-gradient(
+    115deg,
+    rgb(56, 178, 172) 0%,
+    rgb(129, 230, 217) 100%
+  );
+}
+
+.plan:nth-child(3) .plan__stripe {
+  background: linear-gradient(
+    115deg,
+    rgb(245, 101, 101) 0%,
+    rgb(254, 178, 178) 100%
+  );
+}
 
 .plan__top,
 .plan__middle,
@@ -1108,7 +1133,7 @@ footer {
   }
 
   .fa-bars {
-   transform: scale(0.5);
+    transform: scale(0.5);
   }
 
   /*features*/
@@ -1371,7 +1396,6 @@ footer {
   .CTA__buttons {
     margin-top: 24px;
   }
-
 }
 
 @media (max-width: 576px) {
@@ -1420,7 +1444,7 @@ footer {
   }
 
   .features__blob {
-      transform: translateX(100px) translateY(2550px);
+    transform: translateX(100px) translateY(2550px);
   }
 
   /*quality*/
@@ -1473,7 +1497,8 @@ footer {
     align-items: center;
   }
 
-  .CTA__btn--one, .CTA__btn--two {
+  .CTA__btn--one,
+  .CTA__btn--two {
     margin: 0;
   }
 
